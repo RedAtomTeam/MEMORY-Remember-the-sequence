@@ -18,6 +18,9 @@ public class AudioService : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            PlayNextSoundtrack();
+            _soundtracksSource.volume = PlayerPrefs.GetFloat("MusicVolume", 1f);
+            _soundEffectsSource.volume = PlayerPrefs.GetFloat("SoundVolume", 1f);
         }
         else
         {
@@ -45,10 +48,6 @@ public class AudioService : MonoBehaviour
         _soundtracksSource.Pause();
     }
 
-    void Start()
-    {
-    
-    }
 
     private void PlayNextSoundtrack()
     {
@@ -61,6 +60,14 @@ public class AudioService : MonoBehaviour
             }
             _soundtracksSource.clip = _soundtracks[nextIndex];
         }
+        _soundtracksSource.Play();
+    }
+
+    public void PlayEffect(AudioClip clip)
+    {
+        _soundEffectsSource.PlayOneShot(clip);
+        //_soundEffectsSource.clip = clip;
+        //_soundEffectsSource.Play();
     }
 
 
@@ -71,4 +78,6 @@ public class AudioService : MonoBehaviour
             PlayNextSoundtrack();
         }
     }
+
+
 }

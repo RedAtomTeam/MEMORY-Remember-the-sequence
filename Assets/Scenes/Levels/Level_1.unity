@@ -955,6 +955,7 @@ GameObject:
   - component: {fileID: 749403660}
   - component: {fileID: 749403659}
   - component: {fileID: 749403662}
+  - component: {fileID: 749403663}
   m_Layer: 5
   m_Name: Exit_BUTTON
   m_TagString: Untagged
@@ -1089,6 +1090,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: MainMenu
+--- !u!114 &749403663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749403657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &829477776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +1881,7 @@ GameObject:
   - component: {fileID: 1326225301}
   - component: {fileID: 1326225300}
   - component: {fileID: 1326225303}
+  - component: {fileID: 1326225304}
   m_Layer: 5
   m_Name: Retry_BUTTON
   m_TagString: Untagged
@@ -2001,6 +2016,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Level_1
+--- !u!114 &1326225304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326225298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &1458004664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,6 +2346,7 @@ GameObject:
   - component: {fileID: 1715403129}
   - component: {fileID: 1715403128}
   - component: {fileID: 1715403131}
+  - component: {fileID: 1715403132}
   m_Layer: 5
   m_Name: Exit_BUTTON
   m_TagString: Untagged
@@ -2452,6 +2481,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: MainMenu
+--- !u!114 &1715403132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715403126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &1733918605
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,6 +3068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c78c64c76d2c44c9e8bf1492c806fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _correctColorSound: {fileID: 8300000, guid: 63f76e2777fa90349a3098b60e4f2bd9, type: 3}
+  _incorrectColorSound: {fileID: 8300000, guid: e30c87bca427fc44c80388f8ea2a9cc6, type: 3}
   _chooseColorController: {fileID: 1258734386}
   _turnChanger: {fileID: 339598214}
   _endWindowController: {fileID: 1245016653}

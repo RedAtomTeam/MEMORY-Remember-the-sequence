@@ -3274,6 +3274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c78c64c76d2c44c9e8bf1492c806fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _correctColorSound: {fileID: 8300000, guid: 63f76e2777fa90349a3098b60e4f2bd9, type: 3}
+  _incorrectColorSound: {fileID: 8300000, guid: e30c87bca427fc44c80388f8ea2a9cc6, type: 3}
   _chooseColorController: {fileID: 1258734386}
   _turnChanger: {fileID: 339598214}
   _endWindowController: {fileID: 1245016653}

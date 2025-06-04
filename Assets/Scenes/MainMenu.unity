@@ -579,6 +579,7 @@ GameObject:
   - component: {fileID: 178774490}
   - component: {fileID: 178774489}
   - component: {fileID: 178774488}
+  - component: {fileID: 178774491}
   m_Layer: 5
   m_Name: SETTINGS_BTN
   m_TagString: Untagged
@@ -712,6 +713,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178774486}
   m_CullTransparentMesh: 1
+--- !u!114 &178774491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178774486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &193782869
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +1010,7 @@ GameObject:
   - component: {fileID: 258340336}
   - component: {fileID: 258340335}
   - component: {fileID: 258340334}
+  - component: {fileID: 258340338}
   - component: {fileID: 258340337}
   m_Layer: 5
   m_Name: EXIT_BTN
@@ -1130,6 +1145,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5466cb8fa9cbe43ab3ac12b1fd9b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &258340338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258340332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: e30c87bca427fc44c80388f8ea2a9cc6, type: 3}
 --- !u!1 &284015732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,6 +1442,7 @@ GameObject:
   - component: {fileID: 312672598}
   - component: {fileID: 312672597}
   - component: {fileID: 312672596}
+  - component: {fileID: 312672600}
   - component: {fileID: 312672599}
   m_Layer: 5
   m_Name: Round3_BUTTON
@@ -1549,6 +1578,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Level_3
+--- !u!114 &312672600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312672594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &367045946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1603,7 @@ GameObject:
   - component: {fileID: 367045950}
   - component: {fileID: 367045949}
   - component: {fileID: 367045948}
+  - component: {fileID: 367045951}
   m_Layer: 5
   m_Name: Back_Button
   m_TagString: Untagged
@@ -1694,6 +1737,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367045946}
   m_CullTransparentMesh: 1
+--- !u!114 &367045951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367045946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &380614289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +1949,7 @@ GameObject:
   - component: {fileID: 441886259}
   - component: {fileID: 441886258}
   - component: {fileID: 441886257}
+  - component: {fileID: 441886261}
   - component: {fileID: 441886260}
   m_Layer: 5
   m_Name: Round1_BUTTON
@@ -2028,6 +2085,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Level_1
+--- !u!114 &441886261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441886255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &442892359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,7 +2108,6 @@ GameObject:
   m_Component:
   - component: {fileID: 442892361}
   - component: {fileID: 442892360}
-  - component: {fileID: 442892362}
   m_Layer: 0
   m_Name: AudioService
   m_TagString: Untagged
@@ -2060,7 +2129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundtracksSource: {fileID: 1565669393}
   _soundEffectsSource: {fileID: 642275587}
-  _soundtracks: []
+  _soundtracks:
+  - {fileID: 8300000, guid: 170cbc6fe51f33a48a59db63402c607b, type: 3}
+  - {fileID: 8300000, guid: 170cbc6fe51f33a48a59db63402c607b, type: 3}
 --- !u!4 &442892361
 Transform:
   m_ObjectHideFlags: 0
@@ -2078,103 +2149,6 @@ Transform:
   - {fileID: 642275588}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &442892362
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442892359}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &500523771
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,6 +2434,7 @@ GameObject:
   - component: {fileID: 533872065}
   - component: {fileID: 533872064}
   - component: {fileID: 533872063}
+  - component: {fileID: 533872067}
   - component: {fileID: 533872066}
   m_Layer: 5
   m_Name: PLAY_BTN
@@ -2595,6 +2570,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Level_1
+--- !u!114 &533872067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533872061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &642275586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,7 +2612,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4028,6 +4016,7 @@ GameObject:
   - component: {fileID: 1183793474}
   - component: {fileID: 1183793473}
   - component: {fileID: 1183793472}
+  - component: {fileID: 1183793475}
   m_Layer: 5
   m_Name: LEVELS_BTN
   m_TagString: Untagged
@@ -4161,6 +4150,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183793470}
   m_CullTransparentMesh: 1
+--- !u!114 &1183793475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183793470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &1192712068
 GameObject:
   m_ObjectHideFlags: 0
@@ -4865,6 +4867,7 @@ GameObject:
   - component: {fileID: 1464244945}
   - component: {fileID: 1464244944}
   - component: {fileID: 1464244943}
+  - component: {fileID: 1464244946}
   m_Layer: 5
   m_Name: Back_BUTTON
   m_TagString: Untagged
@@ -4997,6 +5000,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464244941}
   m_CullTransparentMesh: 1
+--- !u!114 &1464244946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464244941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &1479051090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5009,6 +5025,7 @@ GameObject:
   - component: {fileID: 1479051094}
   - component: {fileID: 1479051093}
   - component: {fileID: 1479051092}
+  - component: {fileID: 1479051096}
   - component: {fileID: 1479051095}
   m_Layer: 5
   m_Name: Round2_BUTTON
@@ -5144,6 +5161,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Level_2
+--- !u!114 &1479051096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479051090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c1076f411ca84e9b2d170021b2b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectClip: {fileID: 8300000, guid: 36a74bc01b7281146aac41251d477e65, type: 3}
 --- !u!1 &1487756348
 GameObject:
   m_ObjectHideFlags: 0
@@ -5248,7 +5278,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ColorsCircleController : MonoBehaviour
 {
+    [SerializeField] private AudioClip _correctColorSound;
+    [SerializeField] private AudioClip _incorrectColorSound;
 
     [SerializeField] private ChooseColorController _chooseColorController;
     [SerializeField] private TurnChanger _turnChanger;
@@ -16,6 +18,23 @@ public class ColorsCircleController : MonoBehaviour
 
     private int targetCircle = 0;
 
+    public event Action incorrectColorEvent;
+    public event Action correctColorEvent;
+    public event Action<AudioClip> correctColorSoundEvent;
+    public event Action<AudioClip> incorrectColorSoundEvent;
+
+
+    private void OnEnable()
+    {
+        correctColorSoundEvent += AudioService.Instance.PlayEffect;
+        incorrectColorSoundEvent += AudioService.Instance.PlayEffect;
+    }
+
+    private void OnDisable()
+    {
+        correctColorSoundEvent -= AudioService.Instance.PlayEffect;
+        incorrectColorSoundEvent -= AudioService.Instance.PlayEffect;
+    }
 
     public void CreateRandomSequence()
     {
@@ -41,6 +60,8 @@ public class ColorsCircleController : MonoBehaviour
     {
         if (circles[targetCircle].SetColor(color))
         {
+            correctColorEvent?.Invoke();
+            correctColorSoundEvent?.Invoke(_correctColorSound);
             targetCircle++;
             if (targetCircle == circles.Count)
             {
@@ -50,6 +71,8 @@ public class ColorsCircleController : MonoBehaviour
         }
         else
         {
+            incorrectColorEvent?.Invoke();
+            incorrectColorSoundEvent?.Invoke(_incorrectColorSound);
             _turnChanger.gameObject.SetActive(false);
             _endWindowController.EndGame();
         }
