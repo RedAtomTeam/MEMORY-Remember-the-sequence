@@ -13,8 +13,8 @@ public class TurnChanger : MonoBehaviour
 
     [SerializeField] private int turnTime;
 
-    [SerializeField] private TextMeshProUGUI turnPlayerText;
-    [SerializeField] private TextMeshProUGUI turnTimeText;
+    [SerializeField] private TextMeshProUGUI _turnPlayerText;
+    [SerializeField] private TextMeshProUGUI _turnTimeText;
 
     [SerializeField] private GameObject _timerObject;
     [SerializeField] private GameObject _colorButtonsObject;
@@ -39,8 +39,8 @@ public class TurnChanger : MonoBehaviour
         }
         else
         {
-            timeStartEvent += () => turnPlayerText.text = _roundName;
-            timeOverEvent += () => turnPlayerText.text = "PLAYER " + _playerIndex.ToString() + "`s TURN";
+            timeStartEvent += () => _turnPlayerText.text = _roundName;
+            timeOverEvent += () => _turnPlayerText.text = "PLAYER " + _playerIndex.ToString() + "`s TURN";
             StartCoroutine("StartTurnTimerCoroutine");
         }
     }
@@ -50,7 +50,8 @@ public class TurnChanger : MonoBehaviour
         timeStartEvent?.Invoke();
         for (int i = turnTime; i > 0; i--)
         {
-            turnTimeText.text = i.ToString();
+            _turnTimeText.text = i.ToString();
+            _turnTimeText.text = i.ToString();
             yield return new WaitForSeconds(1f);
         }
         _playerIndex++;

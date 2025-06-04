@@ -11,11 +11,11 @@ public class ColorsCircleController : MonoBehaviour
     [SerializeField] private TurnChanger _turnChanger;
     [SerializeField] private EndWindowController _endWindowController;
 
-    [SerializeField] private List<ColorCircle> circles = new List<ColorCircle>();
+    [SerializeField] private List<ColorCircle> _circles = new List<ColorCircle>();
 
     [SerializeField] private List<Color> _colorsToGenerate;
 
-    private int targetCircle = 0;
+    private int _targetCircle = 0;
 
     public event Action incorrectColorEvent;
     public event Action correctColorEvent;
@@ -38,10 +38,10 @@ public class ColorsCircleController : MonoBehaviour
     public void CreateRandomSequence()
     {
         var colors = new List<Color>();
-        for (int i = 0; i < circles.Count; i++)
+        for (int i = 0; i < _circles.Count; i++)
         {
             var color = _colorsToGenerate[UnityEngine.Random.Range(0, _colorsToGenerate.Count - 1)];
-            circles[i].SetTrueColor(color);
+            _circles[i].SetTrueColor(color);
             colors.Add(color);
         }
         _chooseColorController.Init(colors);
@@ -49,22 +49,22 @@ public class ColorsCircleController : MonoBehaviour
 
     public void ClearViewAll()
     {
-        for (int i = 0; i < circles.Count; i++)
+        for (int i = 0; i < _circles.Count; i++)
         {
-            circles[i].ClearView();
+            _circles[i].ClearView();
         }
     }
 
     public void ChooseColor(Color color)
     {
-        if (circles[targetCircle].SetColor(color))
+        if (_circles[_targetCircle].SetColor(color))
         {
             correctColorEvent?.Invoke();
             correctColorSoundEvent?.Invoke(_correctColorSound);
-            targetCircle++;
-            if (targetCircle == circles.Count)
+            _targetCircle++;
+            if (_targetCircle == _circles.Count)
             {
-                targetCircle = 0;
+                _targetCircle = 0;
                 _turnChanger.StartTurn();
             }
         }

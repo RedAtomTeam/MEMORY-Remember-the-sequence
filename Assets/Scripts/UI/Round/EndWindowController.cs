@@ -16,6 +16,4 @@ public class EndWindowController : MonoBehaviour
         _whoWinText.text = "PLAYER " + whoIsWin.ToString() + " WIN";
         _endPanel.SetActive(true);
     }
-
-
 }

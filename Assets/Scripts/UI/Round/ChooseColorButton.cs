@@ -6,8 +6,8 @@ public class ChooseColorButton : MonoBehaviour
     [SerializeField] private ColorsCircleController _colorsCircleController;
 
     [SerializeField] private Color _color;
-
     [SerializeField] private Image _buttonImage;
+
 
     public void Init(ColorsCircleController colorsCircleController, Color color)
     {

@@ -1,28 +1,28 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ColorCircle : MonoBehaviour
 {
-    [SerializeField] private Image image;
-    private Color trueCircleColor;
+    [SerializeField] private Image _image;
+    private Color _trueCircleColor;
+
 
     public void SetTrueColor(Color color)
     {
-        trueCircleColor = color;
-        image.color = color;
+        _trueCircleColor = color;
+        _image.color = color;
     }
 
     public void ClearView()
     {
-        image.color= Color.white;
+        _image.color= Color.white;
     }
 
     public bool SetColor(Color color)
     {
-        if (trueCircleColor == color)
+        if (_trueCircleColor == color)
         {
-            image.color = color;
+            _image.color = color;
             return true;
         }
         else

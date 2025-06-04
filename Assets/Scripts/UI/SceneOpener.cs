@@ -9,6 +9,4 @@ public class SceneOpener : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(_sceneName);
     }
-
-
 }

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -10,7 +9,6 @@ public class SettingsWindow_Updater : MonoBehaviour
 
     public event UnityAction<float> _musicUpdateEvent;
     public event UnityAction<float> _soundUpdateEvent;
-
 
 
     private void Start()

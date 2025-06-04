@@ -65,8 +65,6 @@ public class AudioService : MonoBehaviour
     public void PlayEffect(AudioClip clip)
     {
         _soundEffectsSource.PlayOneShot(clip);
-        //_soundEffectsSource.clip = clip;
-        //_soundEffectsSource.Play();
     }
 
 
